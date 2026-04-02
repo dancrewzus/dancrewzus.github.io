@@ -1,459 +1,560 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<html lang="es_ES">
+  <head>
+    <!-- Initial meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 
-  <title>Daniel Rodríguez | Senior Full Stack Engineer</title>
-  <meta name="description" content="Senior Full Stack Engineer en Santiago, Chile. Especializado en Angular, Node.js, TypeScript, MongoDB, observabilidad, performance y desarrollo de productos web escalables.">
-  <meta name="keywords" content="Daniel Rodríguez, Senior Full Stack Engineer, Angular, Node.js, TypeScript, NestJS, MongoDB, SQL, React, observabilidad, performance, software engineer Chile">
-  <meta name="author" content="Daniel Rodríguez">
-  <meta name="robots" content="index,follow">
-  <meta name="theme-color" content="#0f172a">
-  <link rel="canonical" href="https://dancrewzus.github.io/">
+    <!-- Page information -->
+    <title>Daniel Rodríguez | Senior Full Stack Engineer</title>
+    <meta name="description" content="Senior Full Stack Engineer en Santiago, Chile. Especializado en Angular, Node.js, TypeScript, MongoDB, SQL, performance, observabilidad y desarrollo de productos web escalables.">
+    <link rel="canonical" href="https://dancrewzus.github.io/">
+    <meta name="application-name" content="dancrewzus">
+    <meta name="author" content="Daniel Rodríguez (@dancrewzus)">
+    <meta name="keywords" content="Daniel Rodríguez, software engineer, senior full stack engineer, angular, react, nodejs, typescript, nestjs, javascript, mongodb, mysql, postgresql, sql, docker, observabilidad, performance, grafana, datadog, accessibility, a11y">
 
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Daniel Rodríguez | Senior Full Stack Engineer">
-  <meta property="og:description" content="Construyo aplicaciones web y APIs escalables con foco en performance, mantenibilidad y resultados de negocio.">
-  <meta property="og:url" content="https://dancrewzus.github.io/">
-  <meta property="og:image" content="assets/images/og.png">
-  <meta property="og:locale" content="es_CL">
+    <!-- Share -->
+    <meta property="og:site_name" content="Daniel Rodríguez | Senior Full Stack Engineer">
+    <meta property="og:title" content="Daniel Rodríguez | Senior Full Stack Engineer">
+    <meta property="og:description" content="Construyo aplicaciones web y APIs escalables con foco en performance, mantenibilidad y resultados de negocio.">
+    <meta property="og:image" content="assets/images/og.png">
+    <meta property="og:image:secure_url" content="https://dancrewzus.github.io/assets/images/og.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:url" content="https://dancrewzus.github.io/">
+    <meta property="og:locale" content="es_ES">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@dancrewzus">
+    <meta name="twitter:creator" content="@dancrewzus">
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Daniel Rodríguez | Senior Full Stack Engineer">
-  <meta name="twitter:description" content="Angular, Node.js, TypeScript, APIs, performance, observabilidad y productos escalables.">
-  <meta name="twitter:creator" content="@dancrewzus">
+    <!-- Icons -->
+    <link rel="shortcut icon" href="assets/images/icons/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
 
-  <link rel="shortcut icon" href="assets/images/icons/favicon.ico">
-  <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
+    <!-- App configuration -->
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="theme-color" content="#2D323E">
+    <meta name="msapplication-TileColor" content="#2D323E">
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V3QDMF8TGR"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-V3QDMF8TGR');
-  </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V3QDMF8TGR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V3QDMF8TGR');
+    </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800&display=swap" rel="stylesheet">
-  <link href="assets/vendor/mdi/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
-</head>
-<body>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <button type="button" class="mobile-nav-toggle d-xl-none" aria-label="Abrir menú">
-    <i class="mdi mdi-menu"></i>
-  </button>
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-  <header id="header" class="d-flex flex-column justify-content-center">
-    <nav class="nav-menu" aria-label="Navegación principal">
-      <ul>
-        <li class="active"><a href="#hero"><i class="mdi mdi-home"></i><span>Inicio</span></a></li>
-        <li><a href="#about"><i class="mdi mdi-account"></i><span>Perfil</span></a></li>
-        <li><a href="#highlights"><i class="mdi mdi-star-four-points"></i><span>Valor</span></a></li>
-        <li><a href="#skills"><i class="mdi mdi-code-tags"></i><span>Stack</span></a></li>
-        <li><a href="#experience"><i class="mdi mdi-briefcase"></i><span>Experiencia</span></a></li>
-        <li><a href="#education"><i class="mdi mdi-school"></i><span>Formación</span></a></li>
-        <li><a href="#contact"><i class="mdi mdi-email-outline"></i><span>Contacto</span></a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <button type="button" class="mobile-nav-toggle d-xl-none">
+      <i class="mdi mdi-menu"></i>
+    </button>
 
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <p class="text-uppercase mb-2" style="letter-spacing: .18em; opacity: .8;">Senior Full Stack Engineer</p>
-      <h1>Daniel Rodríguez</h1>
-      <p class="mb-4">
-        Construyo <span class="typed" data-typed-items="aplicaciones web robustas, APIs escalables, plataformas internas, soluciones con foco en performance, productos mantenibles para equipos reales"></span>
-      </p>
-      <p class="col-lg-8 px-0" style="font-size: 1.05rem; max-width: 820px;">
-        Ingeniero de software con experiencia en fintech, SaaS, herramientas internas y ecosistemas de alta exigencia. Especializado en Angular, Node.js, TypeScript, MongoDB, SQL, observabilidad y mejora continua de productos digitales.
-      </p>
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex flex-column justify-content-center">
+      <nav class="nav-menu">
+        <ul>
+          <li class="active">
+            <a href="#hero">
+              <i class="mdi mdi-home"></i>
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li>
+            <a href="#about">
+              <i class="mdi mdi-account"></i>
+              <span>Acerca de mí</span>
+            </a>
+          </li>
+          <li>
+            <a href="#facts">
+              <i class="mdi mdi-exclamation"></i>
+              <span>Valor</span>
+            </a>
+          </li>
+          <li>
+            <a href="#skills">
+              <i class="mdi mdi-webpack"></i>
+              <span>Habilidades</span>
+            </a>
+          </li>
+          <li>
+            <a href="#work">
+              <i class="mdi mdi-file"></i>
+              <span>Experiencia laboral</span>
+            </a>
+          </li>
+          <li>
+            <a href="#studies">
+              <i class="mdi mdi-school"></i>
+              <span>Estudios</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <i class="mdi mdi-email"></i>
+              <span>Contacto</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <div class="mt-4 d-flex flex-wrap gap-2">
-        <a href="#experience" class="btn btn-primary mr-2 mb-2">Ver experiencia</a>
-        <a href="#contact" class="btn btn-outline-light mb-2">Hablemos</a>
-      </div>
-
-      <div class="social-links mt-4">
-        <a href="https://github.com/dancrewzus" target="_blank" rel="noopener noreferrer" class="github" aria-label="GitHub">
-          <i class="mdi mdi-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/dodriguezalarc/" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn">
-          <i class="mdi mdi-linkedin"></i>
-        </a>
-        <a href="https://x.com/idepixel_" target="_blank" rel="noopener noreferrer" class="twitter" aria-label="X/Twitter">
-          <i class="mdi mdi-twitter"></i>
-        </a>
-        <a href="https://www.instagram.com/dancrewzus/" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram">
-          <i class="mdi mdi-instagram"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <main id="main">
-
-    <section id="about" class="section about">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2 class="text-white">Perfil profesional</h2>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Daniel Rodríguez</h1>
+        <p>Soy <span class="typed" data-typed-items="Senior Full Stack Engineer, especialista en Angular y Node.js, desarrollador de productos web escalables, ingeniero enfocado en performance y observabilidad"></span></p>
+        <div class="social-links">
+          <a href="https://github.com/dancrewzus" target="_blank" rel="noopener noreferrer" class="github">
+            <i class="mdi mdi-github"></i>
+          </a>
+          <a href="https://x.com/idepixel_" target="_blank" rel="noopener noreferrer" class="twitter">
+            <i class="mdi mdi-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/dancrewzus/" target="_blank" rel="noopener noreferrer" class="instagram">
+            <i class="mdi mdi-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/dodriguezalarc/" target="_blank" rel="noopener noreferrer" class="linkedin">
+            <i class="mdi mdi-linkedin"></i>
+          </a>
         </div>
+      </div>
+    </section>
 
-        <div class="row align-items-center">
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="profile_image">
-              <div class="profile_info profile_author">Software engineer</div>
-              <div class="profile_info profile_location">Santiago, Chile</div>
-            </div>
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="section about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2 class="text-white">Acerca de mí</h2>
           </div>
-
-          <div class="col-lg-8 content">
-            <h3>Ingeniero de software orientado a producto, performance y mantenibilidad</h3>
-            <p class="font-italic" style="text-align: justify;">
-              Soy desarrollador full stack con foco en construir soluciones que no solo funcionen, sino que escalen, sean mantenibles y aporten valor real al negocio. He trabajado en productos internos, plataformas SaaS, fintech y herramientas para equipos de alta exigencia, participando en análisis, diseño, desarrollo, testing, integración y mejora continua.
-            </p>
-            <p style="text-align: justify;">
-              Mi stack principal gira en torno a Angular, React, Node.js, TypeScript, MongoDB y SQL. También tengo experiencia en observabilidad, debugging, performance, APIs REST, documentación técnica, despliegues y soporte a equipos multidisciplinarios. Disfruto convertir problemas complejos en soluciones claras, estables y bien diseñadas.
-            </p>
-
-            <div class="row mt-4">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="mdi mdi-map-marker"></i>&nbsp;<strong>Ubicación:</strong>&nbsp;Santiago, Chile</li>
-                  <li><i class="mdi mdi-web-off"></i>&nbsp;<strong>Marca personal:</strong>&nbsp;idepixel (sitio temporalmente fuera de línea)</li>
-                  <li><i class="mdi mdi-briefcase-outline"></i>&nbsp;<strong>Enfoque:</strong>&nbsp;Full Stack, APIs, performance y producto</li>
-                  <li><i class="mdi mdi-translate"></i>&nbsp;<strong>Idiomas:</strong>&nbsp;Español nativo, inglés intermedio de lectura y comprensión</li>
-                </ul>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="profile_image">
+                <div class="profile_info profile_author">Senior Full Stack Engineer</div>
+                <div class="profile_info profile_location">Santiago, Chile</div>
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="mdi mdi-account-tie"></i>&nbsp;<strong>Situación actual:</strong>&nbsp;Disponible para trabajo remoto, híbrido o freelance</li>
-                  <li><i class="mdi mdi-email-outline"></i>&nbsp;<strong>Email:</strong>&nbsp;<a href="mailto:idepixel@gmail.com">idepixel@gmail.com</a></li>
-                  <li><i class="mdi mdi-whatsapp"></i>&nbsp;<strong>Contacto:</strong>&nbsp;<a href="https://api.whatsapp.com/send?phone=56944903286&text=Hola%20Daniel,%20vi%20tu%20perfil%20y%20me%20gustar%C3%ADa%20conversar." target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-                  <li><i class="mdi mdi-check-decagram"></i>&nbsp;<strong>Disponibilidad:</strong>&nbsp;Abierto a oportunidades</li>
-                </ul>
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content">
+              <h3>Ingeniero de software full stack orientado a producto, performance y mantenibilidad</h3>
+              <p class="font-italic" style="text-align: justify;">
+                Soy desarrollador de software con experiencia construyendo aplicaciones web, APIs y plataformas internas para productos de negocio y entornos de alta exigencia. Mi foco está en crear soluciones robustas, mantenibles y con impacto real, combinando desarrollo frontend y backend con una visión práctica de arquitectura, performance, observabilidad y evolución continua.
+              </p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="mdi mdi-web-off"></i>&nbsp;<strong>Marca personal:</strong>&nbsp;idepixel (sitio temporalmente fuera de línea)</li>
+                    <li><i class="mdi mdi-phone"></i>&nbsp;<strong>Teléfono:</strong>&nbsp;<a href="https://api.whatsapp.com/send?phone=56944903286&text=Hola%20Daniel,%20vi%20tu%20perfil%20y%20me%20gustar%C3%ADa%20conversar." target="_blank" rel="noopener noreferrer">+56 9 4490 3286</a></li>
+                    <li><i class="mdi mdi-google-maps"></i>&nbsp;<strong>Ciudad:</strong>&nbsp;Santiago, Chile</li>
+                    <li><i class="mdi mdi-briefcase-outline"></i>&nbsp;<strong>Modalidad:</strong>&nbsp;Remoto, híbrido o freelance</li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="mdi mdi-account"></i>&nbsp;<strong>Rol objetivo:</strong>&nbsp;Senior Full Stack Engineer</li>
+                    <li><i class="mdi mdi-school"></i>&nbsp;<strong>Grado:</strong>&nbsp;Ingeniería en Informática</li>
+                    <li><i class="mdi mdi-email"></i>&nbsp;<strong>Correo:</strong>&nbsp;<a href="mailto:idepixel@gmail.com">idepixel@gmail.com</a></li>
+                    <li><i class="mdi mdi-translate"></i>&nbsp;<strong>Inglés:</strong>&nbsp;Intermedio en lectura y comprensión</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="highlights" class="section facts">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Lo que aporto</h2>
-          <p>Más que una lista de tecnologías, este es el tipo de valor que suelo entregar en los equipos donde participo.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="count-box h-100">
-              <i class="mdi mdi-speedometer"></i>
-              <h4>Performance</h4>
-              <p>Optimización de aplicaciones, análisis de cuellos de botella y foco en experiencia real de usuario.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="count-box h-100">
-              <i class="mdi mdi-lan-connect"></i>
-              <h4>Arquitectura</h4>
-              <p>Diseño de APIs, integración de sistemas, organización de código y escalabilidad técnica.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="count-box h-100">
-              <i class="mdi mdi-chart-line"></i>
-              <h4>Observabilidad</h4>
-              <p>Monitoreo, debugging, trazabilidad y soporte para aplicaciones en entornos productivos.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="count-box h-100">
-              <i class="mdi mdi-handshake-outline"></i>
-              <h4>Producto</h4>
-              <p>Trabajo cercano con negocio, soporte, QA y otros equipos para entregar soluciones útiles y mantenibles.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Stack principal</h2>
-          <p>
-            He trabajado con múltiples tecnologías a lo largo de mi carrera, pero estas son las que mejor representan mi perfil actual y el tipo de soluciones que construyo hoy.
-          </p>
-        </div>
-
-        <div class="row skills-content">
-          <div class="col-lg-6">
-            <div class="progress">
-              <span class="skill">TypeScript / JavaScript <i class="val">Experto</i></span>
-              <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div></div>
-            </div>
-            <div class="progress">
-              <span class="skill">Angular <i class="val">Experto</i></span>
-              <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div></div>
-            </div>
-            <div class="progress">
-              <span class="skill">React <i class="val">Avanzado</i></span>
-              <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
-            </div>
-            <div class="progress">
-              <span class="skill">Node.js / Express / NestJS <i class="val">Avanzado</i></span>
-              <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
-            </div>
-            <div class="progress">
-              <span class="skill">MongoDB / SQL <i class="val">Avanzado</i></span>
-              <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="progress">
-              <span class="skill">APIs REST / Swagger <i class="val">Avanzado</i></span>
-              <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
-            </div>
-            <div class="progress">
-              <span class="skill">Git / control de versiones <i class="val">Avanzado</i></span>
-              <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
-            </div>
-            <div class="progress">
-              <span class="skill">Docker / despliegues <i class="val">Intermedio</i></span>
-              <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div></div>
-            </div>
-            <div class="progress">
-              <span class="skill">Performance / A11Y / Stability <i class="val">Avanzado</i></span>
-              <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div>
-            </div>
-            <div class="progress">
-              <span class="skill">Flutter / Vue / Laravel <i class="val">Intermedio-Avanzado</i></span>
-              <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section resume">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Experiencia profesional</h2>
-          <p>
-            He participado en desarrollo de producto, mejora de plataformas existentes, soporte a equipos, observabilidad, debugging y evolución de soluciones internas y comerciales.
-          </p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Experiencia reciente</h3>
-
-            <div class="resume-item">
-              <h4>Senior Software Engineer</h4>
-              <h5>Noviembre 2022 - Marzo 2026</h5>
-              <p><em>Mercado Libre Chile Limitada · Santiago, Chile</em></p>
-              <ul>
-                <li>Diseño y desarrollo de módulos para aplicaciones internas orientadas a SRE y salud de plataformas.</li>
-                <li>Construcción de librerías y servicios para detectar, analizar y explicar problemas de accesibilidad, performance y estabilidad.</li>
-                <li>Integración de herramientas internas del ecosistema MELI con soluciones del área.</li>
-                <li>Soporte técnico y colaboración con equipos relacionados con Site Reliability Engineering.</li>
-                <li>Participación en testing, monitoreo y evolución de aplicaciones críticas para uso interno.</li>
-                <li><strong>Stack:</strong> React, Node.js, SQL, Git y tooling interno.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Desarrollador de Software Full Stack</h4>
-              <h5>Mayo 2021 - Noviembre 2022</h5>
-              <p><em>Soluciones Tecnológicas Primetec Ltda · Santiago, Chile</em></p>
-              <ul>
-                <li>Diseño y desarrollo de nuevos módulos para sistemas empresariales y portales de clientes.</li>
-                <li>Implementación de endpoints para APIs REST y documentación con Swagger.</li>
-                <li>Soporte avanzado a clientes y coordinación con equipos de soporte funcional.</li>
-                <li>Manejo de versiones y colaboración en evolución continua de dos aplicaciones principales.</li>
-                <li><strong>Stack:</strong> Angular, PWA, Node.js, Sails.js, Swagger, Git y SQL.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Programador Full Stack</h4>
-              <h5>Mayo 2019 - Mayo 2021</h5>
-              <p><em>Shareable Innovations SpA · Santiago, Chile</em></p>
-              <ul>
-                <li>Desarrollo de soluciones para distintos clientes y proyectos de negocio.</li>
-                <li>Análisis y diseño de bases de datos según requerimientos funcionales y técnicos.</li>
-                <li>Configuración de servidores, DNS, ambientes QA/producción y automatización de despliegues.</li>
-                <li>Soporte a clientes y mantenimiento evolutivo de productos desarrollados.</li>
-                <li><strong>Stack:</strong> Flutter, Vue.js, Angular, Node.js, Sails.js, Laravel, SQL y MongoDB.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <h3 class="resume-title">Perfil complementario</h3>
-
-            <div class="resume-item">
-              <h4>Experiencia previa y trayectoria</h4>
-              <p style="text-align: justify; margin-bottom: 0;">
-                Antes de consolidarme como desarrollador full stack en Chile, trabajé en roles técnicos y administrativos en Venezuela, además de proyectos freelance, soporte tecnológico y emprendimientos propios. Esa combinación me dio una visión práctica del trabajo con clientes, operación, negocio y resolución de problemas en contextos reales.
+              <p style="text-align: justify;">
+                Mi stack principal gira en torno a Angular, React, Node.js, TypeScript, MongoDB y SQL. También he trabajado en testing, documentación técnica, integración de sistemas, debugging, monitoreo, despliegues y soporte a equipos multidisciplinarios. Disfruto convertir problemas complejos en soluciones claras, bien diseñadas y sostenibles en el tiempo.
               </p>
             </div>
-
-            <div class="resume-item">
-              <h4>Contexto de trabajo</h4>
-              <ul>
-                <li><strong>Primetec:</strong> equipo de 3 personas, alta autonomía y responsabilidad transversal.</li>
-                <li><strong>Mercado Libre:</strong> organización de alrededor de 50 personas, con un equipo específico de 5 personas en observabilidad web.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Fortalezas profesionales</h4>
-              <ul>
-                <li>Capacidad para moverme entre frontend, backend, datos e integración.</li>
-                <li>Facilidad para entender productos existentes y mejorarlos sin romper operación.</li>
-                <li>Orientación a calidad técnica, debugging, mantenibilidad y documentación.</li>
-                <li>Comunicación efectiva con perfiles técnicos y no técnicos.</li>
-                <li>Autonomía, criterio y foco en resolver problemas de negocio.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Proyectos destacados</h4>
-              <ul>
-                <li><strong>FX360 · Primetec:</strong> plataforma de gestión agrícola con múltiples módulos de operación. Participé en el desarrollo de funcionalidades para tracking, fechas de recolección y cosecha, programación de empaquetados, exportación de productos, gestión de clientes, pagos, cobros y tickets. Fue una solución de negocio compleja, construida en un equipo pequeño de 3 personas, donde la versatilidad técnica y la velocidad de entrega eran clave.</li>
-                <li><strong>Frontend Health Services · Mercado Libre:</strong> solución interna orientada a analizar salud de aplicaciones frontend a gran escala. Una parte del sistema obtenía el DOM desde cliente y lo enviaba a una API para almacenamiento; luego, jobs procesaban ese DOM usando <em>axe-core-puppeteer</em> y <em>puppeteer</em> para detectar problemas de accesibilidad, performance y estabilidad. Los resultados se almacenaban, se priorizaban los peores casos y se notificaba automáticamente al owner de cada aplicación. La visibilidad de resultados estaba integrada con Grafana, Looker, Datadog, Fury y herramientas internas de MELI.</li>
-                <li><strong>PagoSeguro:</strong> producto fintech orientado a operación, cobranza, dashboarding y estabilidad. Participación en frontend, backend, debugging, reglas de negocio, observabilidad y evolución funcional del producto.</li>
-              </ul>
-            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="education" class="section studies">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Formación</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Académica</h3>
-            <div class="resume-item">
-              <h4>Ingeniería en Informática</h4>
-              <h5>Formación universitaria</h5>
-              <p><em>Universidad Nacional Experimental de Guayana (UNEG) · Puerto Ordaz, Venezuela</em></p>
-            </div>
+      <!-- ======= Facts Section ======= -->
+      <section id="facts" class="section facts">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Lo que aporto</h2>
           </div>
-
-          <div class="col-lg-6">
-            <h3 class="resume-title">Cursos relevantes</h3>
-            <div class="resume-item">
-              <h4>Principios SOLID y Clean Code</h4>
-              <h6>Udemy · 2022</h6>
-            </div>
-            <div class="resume-item">
-              <h4>Angular</h4>
-              <h6>Udemy · 2021</h6>
-            </div>
-            <div class="resume-item">
-              <h4>Flutter Web y Flutter Avanzado</h4>
-              <h6>Udemy · 2020 - 2021</h6>
-            </div>
-            <div class="resume-item">
-              <h4>Introducción a Python</h4>
-              <h6>Universidad Austral · 2020</h6>
-            </div>
-            <div class="resume-item">
-              <h4>Ruta de Java, PHP y C/C++</h4>
-              <h6>SENA / JG Tecnologías · 2015 - 2020</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Contacto</h2>
-          <p>Estoy abierto a conversar sobre oportunidades laborales, proyectos, consultoría técnica o colaboraciones. Disponible para trabajo remoto, híbrido o freelance.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address mb-4">
-                <i class="mdi mdi-map-marker"></i>
-                <h4>Ubicación</h4>
-                <p>Santiago, Chile</p>
-              </div>
-              <div class="email mb-4">
-                <i class="mdi mdi-email-outline"></i>
-                <h4>Email</h4>
-                <p><a href="mailto:idepixel@gmail.com">idepixel@gmail.com</a></p>
-              </div>
-              <div class="phone mb-4">
-                <i class="mdi mdi-whatsapp"></i>
-                <h4>WhatsApp</h4>
-                <p><a href="https://api.whatsapp.com/send?phone=56944903286&text=Hola%20Daniel,%20vi%20tu%20perfil%20y%20quiero%20conversar." target="_blank" rel="noopener noreferrer">+56 9 4490 3286</a></p>
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="mdi mdi-speedometer"></i>
+                <span>Performance</span>
+                <p>Optimización, análisis técnico y experiencia real de usuario</p>
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-8">
-            <div class="p-4" style="background: rgba(255,255,255,.03); border-radius: 12px;">
-              <h3 class="mb-3">¿Buscas un engineer que entienda producto y tecnología?</h3>
-              <p>
-                Puedo aportar en desarrollo frontend y backend, arquitectura de APIs, integración de sistemas, debugging, observabilidad, performance y evolución de productos existentes.
-              </p>
-              <div class="mt-4 d-flex flex-wrap gap-2">
-                <a href="mailto:idepixel@gmail.com" class="btn btn-primary mr-2 mb-2">Enviar correo</a>
-                <a href="https://www.linkedin.com/in/dodriguezalarc/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light mr-2 mb-2">Ver LinkedIn</a>
-                <a href="https://github.com/dancrewzus" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light mb-2">Ver GitHub</a>
+            <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+              <div class="count-box">
+                <i class="mdi mdi-lan-connect"></i>
+                <span>Arquitectura</span>
+                <p>APIs, integración de sistemas y soluciones mantenibles</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+              <div class="count-box">
+                <i class="mdi mdi-chart-line"></i>
+                <span>Observabilidad</span>
+                <p>Monitoreo, debugging y visibilidad para productos en producción</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+              <div class="count-box">
+                <i class="mdi mdi-handshake-outline"></i>
+                <span>Producto</span>
+                <p>Soluciones alineadas con negocio, soporte y operación real</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer id="footer">
-    <div class="container">
-      <div class="social-links">
-        <a href="https://github.com/dancrewzus" target="_blank" rel="noopener noreferrer" class="github"><i class="mdi mdi-github"></i></a>
-        <a href="https://www.linkedin.com/in/dodriguezalarc/" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="mdi mdi-linkedin"></i></a>
-        <a href="https://x.com/idepixel_" target="_blank" rel="noopener noreferrer" class="twitter"><i class="mdi mdi-twitter"></i></a>
-        <a href="https://www.instagram.com/dancrewzus/" target="_blank" rel="noopener noreferrer" class="instagram"><i class="mdi mdi-instagram"></i></a>
-      </div>
-      <div class="copyright">
-        &copy; <strong><span>Daniel Rodríguez</span></strong>. Todos los derechos reservados.
-      </div>
-      <div class="credits">
-        También me puedes encontrar como <a href="https://idepixel.cl" target="_blank" rel="noopener noreferrer">idepixel</a>.
-      </div>
-    </div>
-  </footer>
+      <!-- ======= Skills Section ======= -->
+      <section id="skills" class="skills section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Habilidades técnicas</h2>
+            <p>
+              A lo largo de mi carrera he trabajado con distintas tecnologías, pero hoy mi perfil está especialmente orientado al desarrollo de productos web, APIs y plataformas internas con foco en calidad técnica, performance y mantenibilidad.
+            </p>
+          </div>
+          <div class="row skills-content">
+            <div class="col-lg-6">
+              <div class="progress">
+                <span class="skill">JavaScript <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">TypeScript <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">Angular <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">React <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">Node.js <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">ExpressJS / NestJS / SailsJS <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">MongoDB <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="progress">
+                <span class="skill">MySQL / PostgreSQL / SQL <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">APIs REST / Swagger <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">Git <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">Docker <i class="val">70%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">Performance / A11Y / Stability <i class="val">85%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">Flutter <i class="val">85%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">Vue.js / Laravel <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <a href="#" class="back-to-top" aria-label="Volver arriba">
-    <span class="mdi mdi-chevron-up"></span>
-  </a>
+      <!-- ======= Work Section ======= -->
+      <section id="work" class="section resume">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Experiencia laboral</h2>
+            <p>
+              He trabajado en productos SaaS, plataformas internas, sistemas empresariales y soluciones de negocio, participando en análisis, diseño, desarrollo, testing, integración, observabilidad y soporte técnico. Me adapto bien tanto a equipos pequeños con alta autonomía como a organizaciones grandes con múltiples stakeholders.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 class="resume-title">Chile</h3>
+              <div class="resume-item">
+                <h4>Senior Software Engineer</h4>
+                <h5>Noviembre 2022 - Marzo 2026</h5>
+                <p><em>Mercado Libre Chile Limitada, Santiago, CL.</em></p>
+                <ul>
+                  <li>Desarrollo de módulos y herramientas internas para aplicaciones del ecosistema SRE-WEB.</li>
+                  <li>Construcción de librerías y servicios para detectar, analizar y explicar problemas de accesibilidad, performance y estabilidad.</li>
+                  <li>Integración con herramientas internas de Mercado Libre y apoyo técnico a equipos relacionados con Site Reliability Engineering.</li>
+                  <li>Participación en testing, monitoreo y evolución de soluciones críticas para visibilidad técnica.</li>
+                  <li><strong>Proyecto destacado:</strong> Frontend Health Services, solución interna que capturaba DOM desde cliente, lo procesaba mediante jobs usando axe-core-puppeteer y puppeteer, almacenaba resultados y notificaba automáticamente a owners de aplicaciones con problemas priorizados.</li>
+                  <li>Los resultados del análisis tenían visibilidad en Grafana, Looker, Datadog, Fury y otras herramientas internas.</li>
+                  <li><strong>Contexto del equipo:</strong> organización de ~50 personas; 5 personas enfocadas en observabilidad web.</li>
+                  <li><strong>Tecnologías usadas:</strong> React, Node.js, JavaScript/TypeScript, SQL, axe-core-puppeteer, puppeteer, Git, Grafana, Datadog y tooling interno.</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Desarrollador de Software Full Stack</h4>
+                <h5>Mayo 2021 - Noviembre 2022</h5>
+                <p><em>Soluciones Tecnológicas Primetec Ltda, Santiago, CL.</em></p>
+                <ul>
+                  <li>Diseño y desarrollo de módulos para sistemas empresariales y portales de clientes.</li>
+                  <li>Implementación de endpoints para API REST y documentación con Swagger.</li>
+                  <li>Soporte avanzado a clientes y apoyo técnico al área de soporte funcional.</li>
+                  <li><strong>Proyecto destacado:</strong> FX360, aplicación para gestión de empresas agrícolas con módulos de tracking, planificación de recolección y cosecha, programación de empaquetados, exportación de productos, gestión de clientes, pagos, cobros y tickets.</li>
+                  <li><strong>Contexto del equipo:</strong> equipo de 3 personas, con alta autonomía y responsabilidad transversal.</li>
+                  <li><strong>Tecnologías usadas:</strong> Angular, Angular PWA, Node.js, SailsJS, Swagger, Git y SQL.</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Programador Full Stack</h4>
+                <h5>Mayo 2019 - Mayo 2021</h5>
+                <p><em>Shareable Innovations SPA, Santiago, CL.</em></p>
+                <ul>
+                  <li>Desarrollo de soluciones para distintos proyectos y clientes.</li>
+                  <li>Análisis y diseño de bases de datos según requerimientos funcionales y técnicos.</li>
+                  <li>Configuración de servidores, DNS y ambientes QA/producción.</li>
+                  <li>Automatización de deploys y soporte a clientes para uso de aplicaciones desarrolladas.</li>
+                  <li><strong>Tecnologías usadas:</strong> Flutter, VueJS, Angular, Angular PWA, Angular SPA, NodeJS, SailsJS, Laravel, Swagger, Git, SQL y MongoDB.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="resume-title">Proyectos y fortalezas</h3>
+              <div class="resume-item">
+                <h4>PagoSeguro</h4>
+                <p><em>Proyecto propio / fintech</em></p>
+                <ul>
+                  <li>Participación en frontend, backend, debugging, observabilidad, reglas de negocio y evolución funcional del producto.</li>
+                  <li>Trabajo sobre dashboards, lógica de cobros, estabilidad del sistema, trazabilidad y mejora continua.</li>
+                  <li>Experiencia real construyendo y operando un producto con necesidades técnicas y de negocio al mismo tiempo.</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Fortalezas profesionales</h4>
+                <ul>
+                  <li>Capacidad para moverme entre frontend, backend, bases de datos e integración.</li>
+                  <li>Fuerte orientación a mantenibilidad, debugging, calidad técnica y documentación.</li>
+                  <li>Experiencia mejorando productos existentes sin afectar la operación.</li>
+                  <li>Facilidad para colaborar con perfiles técnicos y no técnicos.</li>
+                  <li>Autonomía para resolver problemas complejos en equipos pequeños o grandes.</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Trayectoria complementaria</h4>
+                <p style="text-align: justify; margin-bottom: 0;">
+                  Antes de consolidarme como desarrollador full stack en Chile, trabajé en roles técnicos y administrativos en Venezuela, además de proyectos freelance, soporte tecnológico y emprendimientos propios. Esa mezcla me dio una visión muy práctica del negocio, la operación y la resolución de problemas reales para clientes y equipos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <div id="preloader"></div>
+      <!-- ======= Studies Section ======= -->
+      <section id="studies" class="section studies">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Estudios</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 class="resume-title">Universitarios</h3>
+              <div class="resume-item">
+                <h4>Ingeniería en Informática</h4>
+                <h5>Formación universitaria</h5>
+                <p><em>Universidad Nacional Experimental de Guayana (UNEG), Puerto Ordaz, VE.</em></p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="resume-title">Cursos</h3>
+              <div class="resume-item">
+                <h4>Principios SOLID y Clean Code</h4>
+                <h5>6.5 HORAS</h5>
+                <h6>Junio 2022</h6>
+                <p><em>Udemy.</em></p>
+              </div>
+              <div class="resume-item">
+                <h4>Inglés nivel A3</h4>
+                <h6>Julio 2021</h6>
+                <p><em>EF English Live.</em></p>
+              </div>
+              <div class="resume-item">
+                <h4>Flutter web: Aplicaciones y páginas web profesionales</h4>
+                <h5>21 HORAS</h5>
+                <h6>Junio 2021</h6>
+                <p><em>Udemy.</em></p>
+              </div>
+              <div class="resume-item">
+                <h4>Desarrollo web con Angular 11</h4>
+                <h5>19 HORAS</h5>
+                <h6>Enero 2021</h6>
+                <p><em>Udemy.</em></p>
+              </div>
+              <div class="resume-item">
+                <h4>Inglés nivel A2</h4>
+                <h6>Diciembre 2020</h6>
+                <p><em>EF English Live.</em></p>
+              </div>
+              <div class="resume-item">
+                <h4>Flutter avanzado</h4>
+                <h5>34 HORAS</h5>
+                <h6>Octubre 2020</h6>
+                <p><em>Udemy.</em></p>
+              </div>
+              <div class="resume-item">
+                <h4>Introducción a la programación con Python</h4>
+                <h5>35 HORAS</h5>
+                <h6>Julio 2020</h6>
+                <p><em>Universidad Austral, CL.</em></p>
+              </div>
+              <div class="resume-item">
+                <h4>C / C++</h4>
+                <h5>60 HORAS</h5>
+                <h6>Agosto 2020</h6>
+                <p><em>JG Tecnologías, Puerto Ordaz, VE.</em></p>
+              </div>
+              <div class="resume-item">
+                <h4>Ruta de formación en Java y PHP</h4>
+                <h5>Varios cursos</h5>
+                <h6>2015 - 2016</h6>
+                <p><em>Servicio Nacional de Aprendizaje SENA, Bogotá, COL.</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="section contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contacto</h2>
+            <p>Estoy abierto a oportunidades laborales, proyectos freelance, consultoría técnica y colaboraciones.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="resume-item">
+                <h4>¿Buscas un engineer que entienda producto y tecnología?</h4>
+                <p style="text-align: justify;">
+                  Puedo aportar en desarrollo frontend y backend, arquitectura de APIs, integración de sistemas, debugging, observabilidad, performance y evolución de productos existentes.
+                </p>
+                <ul>
+                  <li><i class="mdi mdi-email"></i>&nbsp;<strong>Correo:</strong>&nbsp;<a href="mailto:idepixel@gmail.com">idepixel@gmail.com</a></li>
+                  <li><i class="mdi mdi-whatsapp"></i>&nbsp;<strong>WhatsApp:</strong>&nbsp;<a href="https://api.whatsapp.com/send?phone=56944903286&text=Hola%20Daniel,%20vi%20tu%20perfil%20y%20quiero%20conversar." target="_blank" rel="noopener noreferrer">+56 9 4490 3286</a></li>
+                  <li><i class="mdi mdi-linkedin"></i>&nbsp;<strong>LinkedIn:</strong>&nbsp;<a href="https://www.linkedin.com/in/dodriguezalarc/" target="_blank" rel="noopener noreferrer">/in/dodriguezalarc</a></li>
+                  <li><i class="mdi mdi-github"></i>&nbsp;<strong>GitHub:</strong>&nbsp;<a href="https://github.com/dancrewzus" target="_blank" rel="noopener noreferrer">github.com/dancrewzus</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="social-links">
+          <a href="https://github.com/dancrewzus" target="_blank" rel="noopener noreferrer" class="github">
+            <i class="mdi mdi-github"></i>
+          </a>
+          <a href="https://x.com/idepixel_" target="_blank" rel="noopener noreferrer" class="twitter">
+            <i class="mdi mdi-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/dancrewzus/" target="_blank" rel="noopener noreferrer" class="instagram">
+            <i class="mdi mdi-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/dodriguezalarc/" target="_blank" rel="noopener noreferrer" class="linkedin">
+            <i class="mdi mdi-linkedin"></i>
+          </a>
+        </div>
+        <div class="copyright">
+          &copy; Copyright <strong><span>Daniel Rodríguez</span></strong>. Todos los derechos reservados.
+        </div>
+        <div class="credits">
+          Marca personal: <span>idepixel</span>.
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" class="back-to-top">
+      <span class="mdi mdi-chevron-up"></span>
+    </a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
